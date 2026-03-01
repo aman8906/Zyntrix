@@ -6,6 +6,9 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
+import RequestService from "./pages/RequestService";
+import CaseStudy from "./pages/CaseStudy";
+import ServiceDetail from "./pages/ServiceDetail";
 
 export default function App() {
   return (
@@ -16,6 +19,9 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/request/:serviceName" element={<RequestService />} />
+       <Route path="/case-study/:projectSlug" element={<CaseStudy />} />
+       <Route path="/services/:slug" element={<ServiceDetail />} />
       </Routes>
       <Footer />
     </BrowserRouter>
