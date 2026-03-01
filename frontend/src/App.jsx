@@ -9,6 +9,9 @@ import Contact from "./pages/Contact";
 import RequestService from "./pages/RequestService";
 import CaseStudy from "./pages/CaseStudy";
 import ServiceDetail from "./pages/ServiceDetail";
+import PrivacyPolicy from "./pages/Privacy";
+import TermsConditions from "./pages/Terms";
+import Support from "./pages/Support";
 
 export default function App() {
   return (
@@ -22,6 +25,9 @@ export default function App() {
         <Route path="/request/:serviceName" element={<RequestService />} />
         <Route path="/case-study/:projectSlug" element={<CaseStudy />} />
         <Route path="/services/:slug" element={<ServiceDetail />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<TermsConditions />}/>
+        <Route path="/supports" element={<Support />} />
       </Routes>
       <Footer />
     </BrowserRouter>

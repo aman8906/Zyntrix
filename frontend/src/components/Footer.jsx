@@ -27,7 +27,7 @@ const quickLinks = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
   { name: "Services", href: "/services" },
-  { name: "Portfolio", href: "/portfolio" },
+ 
   { name: "Contact", href: "/contact" },
 ];
 
@@ -211,13 +211,13 @@ export default function Footer() {
           </p>
 
           <div className="flex flex-wrap justify-center md:justify-end gap-6">
-            <NavLink to="/privacy-policy" className="hover:text-blue-500">
+            <NavLink to="/privacy" className="hover:text-blue-500">
               Privacy Policy
             </NavLink>
             <NavLink to="/terms" className="hover:text-blue-500">
               Terms
             </NavLink>
-            <NavLink to="/contact" className="hover:text-blue-500">
+            <NavLink to="/supports" className="hover:text-blue-500">
               Support
             </NavLink>
           </div>
