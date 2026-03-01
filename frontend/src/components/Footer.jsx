@@ -120,10 +120,9 @@ export default function Footer() {
                   <NavLink
                     to={link.href}
                     className={({ isActive }) =>
-                      `transition block hover:text-blue-500 ${
-                        isActive
-                          ? "text-blue-500 font-medium"
-                          : "text-gray-400"
+                      `transition block hover:text-blue-500 ${isActive
+                        ? "text-blue-500 font-medium"
+                        : "text-gray-400"
                       }`
                     }
                   >

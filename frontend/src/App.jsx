@@ -20,8 +20,8 @@ export default function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/request/:serviceName" element={<RequestService />} />
-       <Route path="/case-study/:projectSlug" element={<CaseStudy />} />
-       <Route path="/services/:slug" element={<ServiceDetail />} />
+        <Route path="/case-study/:projectSlug" element={<CaseStudy />} />
+        <Route path="/services/:slug" element={<ServiceDetail />} />
       </Routes>
       <Footer />
     </BrowserRouter>

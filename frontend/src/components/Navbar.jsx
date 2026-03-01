@@ -33,28 +33,27 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 transition ${
-        scrolled
+      className={`sticky top-0 z-50 transition ${scrolled
           ? "bg-white/80 backdrop-blur shadow-md"
           : "bg-white/60 backdrop-blur"
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        
-    {/* LOGO */}
-<NavLink to="/" className="flex items-center">
-  <span
-    className="
+
+        {/* LOGO */}
+        <NavLink to="/" className="flex items-center">
+          <span
+            className="
       text-[30px] font-extrabold tracking-wide
       bg-gradient-to-r from-blue-400 via-cyan-300 to-emerald-300
       bg-clip-text text-transparent
       drop-shadow-[0_4px_12px_rgba(0,255,255,0.4)]
       hover:scale-105 transition duration-300
     "
-  >
-    Zyntrix
-  </span>
-</NavLink>
+          >
+            Zyntrix
+          </span>
+        </NavLink>
         {/* DESKTOP MENU */}
         <nav className="hidden md:flex gap-8 text-gray-700 font-medium">
           <NavLink to="/" className={({ isActive }) => isActive ? activeLink : navLink}>Home</NavLink>

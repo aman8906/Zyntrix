@@ -55,7 +55,7 @@ const faqs = [
     q: "Can you integrate AI chatbots?",
     a: "Absolutely! We integrate AI chatbots & automation solutions.",
   },
-   {
+  {
     q: "How Much Will It Cost?",
     a: "The overall cost depends on your project requirements, features, design complexity, and technology stack. After understanding your goals, timeline, and expected functionality, we provide a transparent and customized quotation. Our pricing ensures quality development, scalability, and long-term value without hidden charges."
   },
@@ -79,7 +79,7 @@ const faqs = [
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
- const [activeFAQ, setActiveFAQ] = useState(0);
+  const [activeFAQ, setActiveFAQ] = useState(0);
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(true);
@@ -103,11 +103,11 @@ export default function Contact() {
           animate={{ y: 0, opacity: 1 }}
           className="relative max-w-7xl mx-auto px-6 text-center"
         >
-         <h1 className="relative inline-block text-5xl font-bold mb-6 group cursor-pointer">
-  Get In <span className="text-blue-400">Touch</span>
+          <h1 className="relative inline-block text-5xl font-bold mb-6 group cursor-pointer">
+            Get In <span className="text-blue-400">Touch</span>
 
-  <span className="absolute left-0 -bottom-3 h-[4px] w-20 bg-gradient-to-r from-blue-400 to-indigo-500 rounded-full transition-all duration-500 group-hover:w-full"></span>
-</h1>
+            <span className="absolute left-0 -bottom-3 h-[4px] w-20 bg-gradient-to-r from-blue-400 to-indigo-500 rounded-full transition-all duration-500 group-hover:w-full"></span>
+          </h1>
 
           <p className="text-lg opacity-90 max-w-2xl mx-auto mb-8">
             Ready to start your project? Let’s build something amazing together.
@@ -147,10 +147,10 @@ export default function Contact() {
             </div>
 
             <div className="relative z-10 p-10 text-white backdrop-blur-xl bg-white/10">
-           <h2 className="relative inline-block text-3xl font-bold mb-2 group cursor-pointer">
-  Send Us a Message
-  <span className="absolute left-0 -bottom-2 h-[3px] w-14 bg-gradient-to-r from-blue-400 to-indigo-500 rounded-full transition-all duration-500 group-hover:w-full"></span>
-</h2>
+              <h2 className="relative inline-block text-3xl font-bold mb-2 group cursor-pointer">
+                Send Us a Message
+                <span className="absolute left-0 -bottom-2 h-[3px] w-14 bg-gradient-to-r from-blue-400 to-indigo-500 rounded-full transition-all duration-500 group-hover:w-full"></span>
+              </h2>
               <p className="text-white/80 mb-8">
                 We’ll contact you within 24 hours.
               </p>
@@ -190,7 +190,7 @@ export default function Contact() {
                     bg-gradient-to-r from-blue-500 to-indigo-600
                     hover:scale-[1.03] transition"
                   >
-                    Send Message 🚀
+                    Send Message
                   </button>
                 </form>
               )}
@@ -223,7 +223,7 @@ export default function Contact() {
 
             <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-6 rounded-xl shadow-lg">
               <h4 className="font-semibold text-lg mb-2">
-                🚀 Quick Response Guarantee
+                Quick Response Guarantee
               </h4>
               <p className="text-sm opacity-90">
                 All queries answered within 24 business hours.
@@ -234,80 +234,79 @@ export default function Contact() {
       </section>
 
       {/* ================= FAQ + MAP ================= */}
-<section className="py-24 bg-gray-100">
-  <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-start">
+      <section className="py-24 bg-gray-100">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-start">
 
-    {/* LEFT SIDE - FAQ */}
-    <div>
-    <h2 className="relative inline-block text-3xl font-bold mb-10 group cursor-pointer">
-  Frequently Asked Questions
-  <span className="absolute left-0 -bottom-2 h-[3px] w-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full transition-all duration-500 group-hover:w-full"></span>
-</h2>
+          {/* LEFT SIDE - FAQ */}
+          <div>
+            <h2 className="relative inline-block text-3xl font-bold mb-10 group cursor-pointer">
+              Frequently Asked Questions
+              <span className="absolute left-0 -bottom-2 h-[3px] w-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full transition-all duration-500 group-hover:w-full"></span>
+            </h2>
 
-      <div className="space-y-4">
-        {faqs.map((faq, i) => {
-          const isActive = activeFAQ === i;
+            <div className="space-y-4">
+              {faqs.map((faq, i) => {
+                const isActive = activeFAQ === i;
 
-          return (
-            <div key={i} className="shadow-md rounded overflow-hidden">
+                return (
+                  <div key={i} className="shadow-md rounded overflow-hidden">
 
-              {/* Question Bar */}
-              <button
-                onClick={() =>
-                  setActiveFAQ(isActive ? null : i)
-                }
-                className={`w-full flex justify-between items-center px-6 py-4 text-left font-medium transition-all duration-300
-                ${
-                  isActive
-                    ? "bg-cyan-500 text-white"
-                    : "bg-cyan-400 text-white hover:bg-cyan-500"
-                }`}
-              >
-                <span>{faq.q}</span>
+                    {/* Question Bar */}
+                    <button
+                      onClick={() =>
+                        setActiveFAQ(isActive ? null : i)
+                      }
+                      className={`w-full flex justify-between items-center px-6 py-4 text-left font-medium transition-all duration-300
+                ${isActive
+                          ? "bg-cyan-500 text-white"
+                          : "bg-cyan-400 text-white hover:bg-cyan-500"
+                        }`}
+                    >
+                      <span>{faq.q}</span>
 
-                <span className="text-xl font-bold">
-                  {isActive ? "−" : "+"}
-                </span>
-              </button>
+                      <span className="text-xl font-bold">
+                        {isActive ? "−" : "+"}
+                      </span>
+                    </button>
 
-              {/* Answer */}
-              <div
-                className={`transition-all duration-500 overflow-hidden bg-white
+                    {/* Answer */}
+                    <div
+                      className={`transition-all duration-500 overflow-hidden bg-white
                 ${isActive ? "max-h-96 p-6" : "max-h-0 px-6"}
                 `}
-              >
-                <p className="text-gray-600 leading-relaxed">
-                  {faq.a}
-                </p>
-              </div>
+                    >
+                      <p className="text-gray-600 leading-relaxed">
+                        {faq.a}
+                      </p>
+                    </div>
 
+                  </div>
+                );
+              })}
             </div>
-          );
-        })}
-      </div>
-    </div>
+          </div>
 
-    {/* RIGHT SIDE - MAP */}
-    <div>
-      <h2 className="relative inline-block text-3xl font-bold mb-10 group cursor-pointer">
-  Our Location
-  <span className="absolute left-0 -bottom-2 h-[3px] w-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full transition-all duration-500 group-hover:w-full"></span>
-</h2>
-      <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-        <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/20 to-indigo-900/10 pointer-events-none" />
+          {/* RIGHT SIDE - MAP */}
+          <div>
+            <h2 className="relative inline-block text-3xl font-bold mb-10 group cursor-pointer">
+              Our Location
+              <span className="absolute left-0 -bottom-2 h-[3px] w-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full transition-all duration-500 group-hover:w-full"></span>
+            </h2>
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/20 to-indigo-900/10 pointer-events-none" />
 
-        <iframe
-          title="Company Location"
-          src="https://www.google.com/maps?q=Mumbai&output=embed"
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          className="w-full h-[500px] border-0"
-        />
-      </div>
-    </div>
+              <iframe
+                title="Company Location"
+                src="https://www.google.com/maps?q=Mumbai&output=embed"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full h-[500px] border-0"
+              />
+            </div>
+          </div>
 
-  </div>
-</section>
+        </div>
+      </section>
 
       {/* ================= CTA ================= */}
       <section className="py-24 bg-gradient-to-br from-blue-600 to-indigo-700 text-white text-center">
@@ -317,7 +316,7 @@ export default function Contact() {
               Ready to Transform Your Business?
             </h2>
             <p className="opacity-90 mb-8 max-w-2xl mx-auto">
-             Join our satisfied clients and let us help you achieve your digital goals. Contact us today for a free consultation and detailed project proposal.
+              Join our satisfied clients and let us help you achieve your digital goals. Contact us today for a free consultation and detailed project proposal.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

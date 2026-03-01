@@ -186,23 +186,23 @@ const services = [
     ],
   },
 
- {
-  title: "Cloud & Hosting Solutions",
-  slug: "cloud-hosting-solutions",
-  category: "Cloud",
-  price: "From ₹20,000",
-  icon: <FaCloud />,
-  image:
-    "https://images.unsplash.com/photo-1518770660439-4636190af475",
-  description:
-    "Secure cloud deployment, DevOps pipelines, and scalable hosting solutions on AWS, Azure, and modern cloud platforms.",
-  features: [
-    "AWS / Azure setup",
-    "CI/CD integration",
-    "Server monitoring",
-    "Backup & disaster recovery",
-  ],
-},
+  {
+    title: "Cloud & Hosting Solutions",
+    slug: "cloud-hosting-solutions",
+    category: "Cloud",
+    price: "From ₹20,000",
+    icon: <FaCloud />,
+    image:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    description:
+      "Secure cloud deployment, DevOps pipelines, and scalable hosting solutions on AWS, Azure, and modern cloud platforms.",
+    features: [
+      "AWS / Azure setup",
+      "CI/CD integration",
+      "Server monitoring",
+      "Backup & disaster recovery",
+    ],
+  },
 
   {
     title: "Cyber Security Services",
@@ -331,102 +331,102 @@ const ServicesPage = () => {
         </motion.div>
       </section>
       {/* SERVICES SECTION - PROFESSIONAL VERSION */}
-<section className="py-24 px-6 bg-gray-50">
-  <div className="max-w-7xl mx-auto">
+      <section className="py-24 px-6 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
 
-   <div className="text-center mb-16 group">
-  <h2 className="text-4xl md:text-5xl font-bold text-gray-900 inline-block">
-    Our Core Services
-  </h2>
-  <span className="block h-1 w-20 bg-indigo-600 mx-auto mt-4 transition-all duration-500 group-hover:w-40"></span>
-</div>
-
-    <p className="text-gray-600 text-center max-w-2xl mx-auto mb-16">
-      We provide high-quality digital solutions designed to help your
-      business scale, innovate, and dominate the market.
-    </p>
-
-    <div className="grid md:grid-cols-3 gap-10">
-
-      {services.map((service, index) => (
-        <motion.div
-          key={index}
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: index * 0.2 }}
-          viewport={{ once: true }}
-          whileHover={{ y: -8 }}
-          className="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl border border-gray-200 transition duration-300 group"
-        >
-
-          {/* Image */}
-          <div className="relative overflow-hidden">
-            <img
-              src={service.image}
-              alt={service.title}
-              className="h-52 w-full object-cover group-hover:scale-110 transition duration-500"
-            />
-
-            {/* Price Badge */}
-            {service.price && (
-              <span className="absolute top-4 right-4 bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full">
-                {service.price}
-              </span>
-            )}
+          <div className="text-center mb-16 group">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 inline-block">
+              Our Core Services
+            </h2>
+            <span className="block h-1 w-20 bg-indigo-600 mx-auto mt-4 transition-all duration-500 group-hover:w-40"></span>
           </div>
 
-          {/* Content */}
-          <div className="p-6">
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-16">
+            We provide high-quality digital solutions designed to help your
+            business scale, innovate, and dominate the market.
+          </p>
 
-            <div className="text-3xl text-indigo-600 mb-4">
-              {service.icon}
-            </div>
+          <div className="grid md:grid-cols-3 gap-10">
 
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">
-              {service.title}
-            </h3>
+            {services.map((service, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -8 }}
+                className="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl border border-gray-200 transition duration-300 group"
+              >
 
-            <p className="text-gray-600 text-sm mb-6">
-              {service.description}
-            </p>
+                {/* Image */}
+                <div className="relative overflow-hidden">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="h-52 w-full object-cover group-hover:scale-110 transition duration-500"
+                  />
 
-            {/* Short Features */}
-            {service.features && (
-              <ul className="space-y-2 mb-6">
-                {service.features.slice(0, 3).map((feature, i) => (
-                  <li key={i} className="flex items-center text-sm text-gray-700">
-                    <span className="text-green-600 mr-2">✓</span>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-            )}
+                  {/* Price Badge */}
+                  {service.price && (
+                    <span className="absolute top-4 right-4 bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full">
+                      {service.price}
+                    </span>
+                  )}
+                </div>
 
-            {/* Button */}
-            <NavLink to={`/services/${service.slug}`}>
-              <button className="w-full py-2 rounded-lg bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition duration-300">
-                View Details
-              </button>
-            </NavLink>
+                {/* Content */}
+                <div className="p-6">
+
+                  <div className="text-3xl text-indigo-600 mb-4">
+                    {service.icon}
+                  </div>
+
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                    {service.title}
+                  </h3>
+
+                  <p className="text-gray-600 text-sm mb-6">
+                    {service.description}
+                  </p>
+
+                  {/* Short Features */}
+                  {service.features && (
+                    <ul className="space-y-2 mb-6">
+                      {service.features.slice(0, 3).map((feature, i) => (
+                        <li key={i} className="flex items-center text-sm text-gray-700">
+                          <span className="text-green-600 mr-2">✓</span>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+
+                  {/* Button */}
+                  <NavLink to={`/services/${service.slug}`}>
+                    <button className="w-full py-2 rounded-lg bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition duration-300">
+                      View Details
+                    </button>
+                  </NavLink>
+
+                </div>
+              </motion.div>
+            ))}
 
           </div>
-        </motion.div>
-      ))}
-
-    </div>
-  </div>
-</section>
+        </div>
+      </section>
       {/* PROCESS OVERVIEW - LIGHT PROFESSIONAL VERSION */}
       <section className="relative bg-white py-24 px-6">
 
         <div className="max-w-7xl mx-auto text-center">
 
-        <div className="text-center mb-16 group">
-  <h2 className="text-4xl md:text-5xl font-bold text-gray-900 inline-block">
-    Our Working Process
-  </h2>
-  <span className="block h-1 w-20 bg-pink-500 mx-auto mt-4 transition-all duration-500 group-hover:w-40"></span>
-</div>
+          <div className="text-center mb-16 group">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 inline-block">
+              Our Working Process
+            </h2>
+            <span className="block h-1 w-20 bg-pink-500 mx-auto mt-4 transition-all duration-500 group-hover:w-40"></span>
+          </div>
 
           <p className="text-gray-600 max-w-2xl mx-auto mb-16">
             We follow a strategic IT workflow to deliver scalable, secure,
@@ -520,12 +520,12 @@ const ServicesPage = () => {
       <section className="bg-white py-24 px-6">
         <div className="max-w-7xl mx-auto text-center">
 
-         <div className="text-center mb-16 group">
-  <h2 className="text-4xl md:text-5xl font-bold text-gray-900 inline-block">
-    Our IT Service Packages
-  </h2>
-  <span className="block h-1 w-20 bg-indigo-600 mx-auto mt-4 transition-all duration-500 group-hover:w-40"></span>
-</div>
+          <div className="text-center mb-16 group">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 inline-block">
+              Our IT Service Packages
+            </h2>
+            <span className="block h-1 w-20 bg-indigo-600 mx-auto mt-4 transition-all duration-500 group-hover:w-40"></span>
+          </div>
           <p className="text-gray-600 max-w-2xl mx-auto mb-16">
             Flexible and scalable pricing plans designed to meet the needs of
             startups, growing businesses, and enterprise-level organizations.
@@ -640,14 +640,14 @@ const ServicesPage = () => {
       <section className="bg-gray-50 py-24 px-6">
 
         <div className="max-w-7xl mx-auto text-center">
-<div className="text-center mb-16 group">
-  <h2 className="text-4xl md:text-5xl font-bold text-gray-900 inline-block">
-    What Our Clients Say
-  </h2>
-  <span className="block h-1 w-20 bg-gradient-to-r from-indigo-500 to-pink-500 
+          <div className="text-center mb-16 group">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 inline-block">
+              What Our Clients Say
+            </h2>
+            <span className="block h-1 w-20 bg-gradient-to-r from-indigo-500 to-pink-500 
                  mx-auto mt-4 rounded-full
                  transition-all duration-500 group-hover:w-44"></span>
-</div>
+          </div>
 
           <p className="text-gray-600 max-w-2xl mx-auto mb-16">
             Trusted by startups, enterprises, and growing businesses worldwide.

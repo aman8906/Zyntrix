@@ -49,20 +49,20 @@ export default function RequestService() {
         {/* Heading */}
         <div className="text-center mb-14">
           <div className="text-center mb-16 group">
-  <h2 className="text-4xl md:text-5xl font-bold">
-     Request Service
-  </h2>
-  <span className="block h-1 w-20 bg-gradient-to-r from-indigo-500 to-pink-500 
+            <h2 className="text-4xl md:text-5xl font-bold">
+              Request Service
+            </h2>
+            <span className="block h-1 w-20 bg-gradient-to-r from-indigo-500 to-pink-500 
                  mx-auto mt-4 rounded-full
                  transition-all duration-500 group-hover:w-44"></span>
 
-         <p className="mt-4 text-slate-400 text-lg">
-            You're requesting:{" "}
-            <span className="text-blue-500 font-semibold">
-              {decodedService}
-            </span>
-          </p>
-        </div>
+            <p className="mt-4 text-slate-400 text-lg">
+              You're requesting:{" "}
+              <span className="text-blue-500 font-semibold">
+                {decodedService}
+              </span>
+            </p>
+          </div>
         </div>
 
         {/* Form Card */}
