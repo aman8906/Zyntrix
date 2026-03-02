@@ -133,7 +133,7 @@ const TermsConditions = () => {
         <p className="mb-6 text-blue-100">
           Contact our legal support team for any questions.
         </p>
-        <p>Email: info@yourcompany.com</p>
+        <p>Email: info@zyntrix.com</p>
         <p>Phone: +91 8273194768</p>
       </section>
 

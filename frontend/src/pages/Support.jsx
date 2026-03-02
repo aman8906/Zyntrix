@@ -151,7 +151,7 @@ const Support = () => {
         <p className="mb-6 text-blue-100">
           Contact our support team anytime.
         </p>
-        <p>Email: support@yourcompany.com</p>
+        <p>Email: support@zyntrix.com</p>
         <p>Phone: +91 8273194768</p>
       </section>
 

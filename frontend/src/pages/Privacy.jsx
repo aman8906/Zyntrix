@@ -151,7 +151,7 @@ const PrivacyPolicy = () => {
           Have questions about your data? Reach out anytime.
         </p>
 
-        <p>Email: info@yourcompany.com</p>
+        <p>Email: info@zyntrix.com</p>
         <p>Phone: +91 8273194768</p>
       </section>
 
